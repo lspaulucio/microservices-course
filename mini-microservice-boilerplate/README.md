@@ -2,6 +2,10 @@
 
 This very simple application looks like a blog system where a user can create new posts and others can comment on them.
 
+# Application/Services Architecture
+
+![architecture](images/simplified-architecture.png) 
+
 ## Dependences
 The following tools are needed to run this project:
 - Git
@@ -21,11 +25,6 @@ The ingress controller can be installed through minikube's addons system [^1]:
 ```
 
 [^1]: Source: https://kubernetes.github.io/ingress-nginx/deploy/#minikube.
-
-# Application/Services Architecture
-
-![architecture](images/simplified-architecture.png) 
-
 
 # Running this application
 

@@ -21,7 +21,7 @@ kind: Service
 metadata:
   name: client-clusterip-srv
 spec:
-  type: NodePort # Default if not defined
+  type: NodePort
   selector:
     app: client
   ports:

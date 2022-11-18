@@ -13,9 +13,14 @@ spec:
         app: auth
     spec:
       containers:
-      - name: auth
-        image: lspaulucio/ticketing-auth
-
+        - name: auth
+          image: cygnetops/auth
+          env:
+            - name: JWT_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: jwt-secret
+                  key: JWT_KEY
 ---
 apiVersion: v1
 kind: Service
